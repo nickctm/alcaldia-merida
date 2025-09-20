@@ -3,25 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alcaldía de Mérida</title>
+    <title>Alcaldía de Mérida - Gobierno Municipal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Alcaldía de Mérida</h1>
+   <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhMLf1VeE-aAkNGy1n8Qz8Ljf7JySLrnziA&s" alt="Escudo de Mérida">
+                    <div class="logo-text">
+                        <h1>Alcaldía de Mérida</h1>
+                        <p>Gobierno Municipal al servicio del pueblo</p>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="login.php" class="btn btn-login">Iniciar Sesión</a>
+                    <a href="formulario.php" class="btn btn-register">Registro</a>
+                </div>
+            </div>
+        </div>
         <nav>
-            <a href="index.php">Inicio</a>
-            <a href="#">Noticias</a>
-            <a href="#">Trámites</a>
-            <a href="#">Contacto</a>
+            <div class="container">
+                <ul>
+                    <li><a href="index.php" class="active">Inicio</a></li>
+                    <li><a href="enlaces/alcaldia.php">Alcaldía</a></li>
+                    <li><a href="enlaces/servicios.php">Servicios</a></li>
+                    <li><a href="enlaces/noticias.php">Noticias</a></li>
+                    <li><a href="enlaces/turismo.php">Turismo</a></li>
+                    <li><a href="enlaces/contacto.php">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <h2>Bienvenido</h2>
-        <p>Esta es la página informativa de la Alcaldía de Mérida.</p>
-    </main>
+
+   <section class="hero">
+    <div class="hero-slide" style="background-image: url('https://fronteradigital.com.ve/storage/uploads/2023/9/MjAyMzk1QUxDQUxEw41BIERFIE3DiVJJREEgRURJRklDSU8uanBnMjI0OTE5.jpg');"></div>
+    <div class="hero-slide" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Merida_Venezuela_Sierra_Nevada.jpg/1280px-Merida_Venezuela_Sierra_Nevada.jpg');"></div>
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h2>Bienvenidos a la Alcaldía de Mérida</h2>
+            <p>Trabajando por el desarrollo y progreso de nuestro municipio</p>
+            <a href="#" class="btn">Conoce más</a>
+        </div>
+    </div>
+</section>
+
+   <section class="services">
+    <div class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-clipboard"></i></div>
+                <div class="service-content">
+                    <h3>Trámites Municipales</h3>
+                    <p>Realiza tus trámites de manera rápida y sencilla a través de nuestros canales digitales.</p>
+                </div>
+                <a href="tramites-municipales.php" class="btn btn-card">Ver más</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bank"></i></div>
+                <div class="service-content">
+                    <h3>Atención Ciudadana</h3>
+                    <p>Recibe asesoría y solución a tus inquietudes a través de nuestros canales de atención.</p>
+                </div>
+                <a href="atencion-ciudadana.php" class="btn btn-card">Ver más</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-truck-medical"></i></div>
+                <div class="service-content">
+                    <h3>Emergencias</h3>
+                    <p>Reporta emergencias y recibe asistencia inmediata de nuestros organismos.</p>
+                </div>
+                <a href="emergencias.php" class="btn btn-card">Ver más</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <section class="news">
+    <div class="container">
+        <h2 class="section-title">Últimas Noticias</h2>
+        <div class="news-grid">
+            <a href="https://comunicacioncontinua.com/alcalde-de-merida-nelson-alvarez-presento-su-equipo-de-gobierno/" class="news-card">
+                <div class="news-image">
+                    <img src="imagenes/noticia.jpg" alt="Noticia 1">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">hace 21 días</div>
+                    <h3>Alcalde de Mérida Nelson Álvarez presentó su equipo de gobierno</h3>
+                    <p>El alcalde del munucipio Libertador del estado  Bolivariano de merida Nelson Álvarez, realizo la presentación oficial del nuevo equipo de Gobierno Popular.</p>
+                </div>
+            </a>
+            <a href="http://radiomundial.com.ve/alcaldia-del-libertador-se-reunio-con-coordinadores-de-los-circuitos-comunales-de-justicia-de-paz/" class="news-card">
+                <div class="news-image">
+                    <img src="http://radiomundial.com.ve/wp-content/uploads/2025/09/REUNION-CON-CIRCUITOS-COMUNALES-DE-PAZ-780x470.jpg" alt="Noticia 2">
+                </div>
+                <div class="news-content">
+                    <div class="news-date">hace 3 días</div>
+                    <h3>Alcaldía del Libertador se reunió con coordinadores de los circuitos comunales de justicia de paz</h3>
+                    <p>César Moret, comisionado para la Dirección de Justicia de Paz Comunal de la Alcaldía, informó que la reunión se llevó a cabo con el propósito de seguir impulsando la transformación en la administración de la justicia de los jueces de paz comunal.</p>
+                </div>
+            </a>
+            <a href="http://radiomundial.com.ve/alcaldia-de-merida-inicia-el-plan-vacacional-con-mas-de-650-ninos-y-ninas/" class="news-card">
+                <div class="news-image">
+                    <img src="http://radiomundial.com.ve/wp-content/uploads/2025/09/IMG-20250904-WA0030-780x470.jpg" alt="Noticia 3"></div>
+                <div class="news-content">
+                    <div class="news-date">hace 7 días</div>
+                    <h3>Alcaldía de Mérida inicia el plan vacacional con más de 650 niños y niñas</h3>
+                    <p>“La sonrisa de los niños termina siendo para nosotros un combustible que nos impulsa al ánimo, al espíritu positivo, a las cosas buenas, a la fe, la esperanza y al futuro”, expresó el burgomaestre durante el acto de apertura.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+  <section class="contact">
+    <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Dirección</h3>
+                        <p>Alcaldía Municipio Libertador, 5101 C. 45, Mérida 5101, Mérida</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Teléfonos</h3>
+                        <p>0424-7669760<br>0274-2512076</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@cmlibertador.net</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3>Horario de Atención</h3>
+                        <p>Lunes a Viernes: 8:30 am - 2:45 pm.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Envíanos un mensaje</h3>
+                <div id="contact-form-section">
+                    <!-- Aquí iría el formulario de contacto funcional en PHP -->
+                    <form action="#contact-form-section" method="POST">
+                        <input type="text" name="name" placeholder="Nombre completo" required>
+                        <input type="email" name="email" placeholder="Correo electrónico" required>
+                        <input type="number" name="phone" placeholder="Teléfono">
+                        <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <footer>
-        <p>&copy; 2025 Alcaldía de Mérida</p>
-    </footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Alcaldía de Mérida</h3>
+                <p>Gobierno municipal comprometido con el desarrollo sostenible y el bienestar de todos los merideños.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/alcaldiademeridaoficial/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.threads.net/alcaldiademeridaoficial/" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                    <a href="https://www.facebook.com/p/Prensa-Alcald%C3%ADa-de-M%C3%A9rida-100064600245920/?locale=es_LA" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Alcaldía del Municipio Libertador de Mérida - Todos los derechos reservados</p>
+        </div>
+    </div>
+</footer> 
 </body>
 </html>

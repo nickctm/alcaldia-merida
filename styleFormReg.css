@@ -1,0 +1,290 @@
+/* Estilos generales y efectos del body */
+/* Fondo animado suave y moderno */
+body {
+    background: linear-gradient(120deg, #eaf1f9 0%, #dce8f5 50%, #eaf1f9 100%);
+    background-size: 200% 200%;
+    animation: gradientMove 12s ease-in-out infinite;
+}
+
+/* Sombra sutil para todo el contenido */
+.form-container {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(2px);
+}
+
+/* Inputs con efecto glass y foco destacado */
+.form-group input,
+.form-group textarea,
+.form-group select {
+    background: rgba(245, 247, 250, 0.85);
+    border: 1.5px solid #c3d0e8;
+    box-shadow: 0 2px 8px rgba(30, 98, 208, 0.04);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #0b3d91;
+    box-shadow: 0 0 0 2px #b3d1fa;
+}
+
+/* Botón con gradiente y efecto hover */
+.btn {
+    background: linear-gradient(90deg, #0b3d91 0%, #1e62d0 100%);
+    box-shadow: 0 4px 14px 0 rgba(30, 98, 208, 0.12);
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #1e62d0 0%, #0b3d91 100%);
+    box-shadow: 0 6px 20px 0 rgba(30, 98, 208, 0.18);
+}
+
+/* Etiquetas y títulos con color destacado */
+.form-container h2,
+.form-group label {
+    letter-spacing: 0.5px;
+}
+
+.form-container h2 {
+    font-size: 2.1em;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    font-size: 1.05em;
+    color: #1e62d0;
+}
+
+/* Responsive grid para campos del formulario */
+@media (min-width: 600px) {
+    .form-group-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 599px) {
+    .form-container {
+        padding: 25px;
+    }
+    .form-group-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mensajes de validación con iconos */
+.success-message::before {
+    content: "✔ ";
+    font-weight: bold;
+    color: #28a745;
+}
+
+.error-message::before {
+    content: "✖ ";
+    font-weight: bold;
+    color: #dc3545;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(-45deg, #eaf1f9, #dce8f5, #eaf1f9);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Estilos del contenedor del formulario */
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+}
+
+.form-container h2 {
+    color: #0b3d91;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.form-group-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #1e62d0;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #1e62d0;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #0b3d91;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para mensajes de validación */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Modal styles (from original file) */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9);
+    transition: transform 0.4s ease;
+}
+
+.modal:target .modal-content {
+    transform: scale(1);
+}
+
+.modal-content h3 {
+    color: #0b3d91;
+    border-bottom: 2px solid #1e62d0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.modal-content strong {
+    color: #1e62d0;
+}
